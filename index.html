@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CJ-TODO-LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>TO DO LIST <img src="Images/icon.png"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your task">
+                <button onclick="addTask()">Add</button>
+                
+            </div>
+            <ul id="list-container"> 
+                
+            </ul>
+            <div class="edit-button">
+                <button id="edit-button" onclick="editTasks()">Edit</button>
+                <button id="done-button" style="display: none;" onclick="endEdit()">Done</button>
+             </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
